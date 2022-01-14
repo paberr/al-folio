@@ -9,7 +9,7 @@ profile:
   image: profile.jpg
   address: Birmingham, UK and Saarbrücken, Germany
 
-news: false  # includes a list of news items
+news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
@@ -22,10 +22,11 @@ Previously, I was a freelance researcher & consultant, specialising in blockchai
 Prior to that, I completed my PhD in the Information Security and Cryptography Group at [Saarland University](https://uni-saarland.de) under supervision of [Michael Backes](https://cispa.saarland/director/). My PhD thesis has the title *Quantifying and Mitigating Privacy Risks in Biomedical Data*. My thesis recently received the *Dr. Eduard-Martin award 2019* for the best PhD thesis in the category in mathematics and computer science.
 I obtained my Bachelor degree from [Saarland University](https://uni-saarland.de) in 2013, before joining the Graduate School of Computer Science there.
 
-Research Areas
-======
-- Security and Privacy of Health Data
-- Security and Privacy of Blockchain Technology
+## research areas
+
 - Security and Privacy of Machine Learning
+- Security and Privacy of Blockchain Technology
+- Security and Privacy of Health Data
 
 If you're a student interested in pursuing a PhD in one of these topics, don't hesitate contacting me!
+
