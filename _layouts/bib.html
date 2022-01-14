@@ -151,7 +151,8 @@
           {% if entry.bibtex_show -%}
           <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            {% highlight bibtex %}{{ entry.bibtex }}{% endhighlight %}
+            {% assign bibtext_str = entry.bibtex | regex_replace: "( )*((html)|(code)|(selected)|(bibtex_show)|(abbr)|(pdf)|(abstract)|(blog)|(poster)|(slides)|(website)|(supp)|(arxiv)|(keywords))+(.)*(\n)*(\r)*", "" %}
+{% highlight bibtex %}{{ bibtext_str }}{% endhighlight %}
           </div>
           {%- endif %}
         </div>
