@@ -2,11 +2,19 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: Taught courses.
 nav: true
 nav_order: 6
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+#### Network Security & Cryptography (2021, Sem 1)
+Lecturer
 
-Organize your courses by years, topics, or universities, however you like!
+#### Security & Networks (2021, Sem 2)
+Lecturer
+
+#### Theory of Modern Privacy Research (Winter 2016)
+Lecturer/Advisor
+
+#### Foundations of Cybersecurity (Winter 2015)
+Teaching Assistant
