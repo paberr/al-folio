@@ -5,7 +5,10 @@
   booktitle   = {Proceedings of the 26th Annual Network and Distributed System Security Symposium (NDSS)},
   keywords    = {primary},
   abbr        = {NDSS},
-  bibtex_show = {true}
+  bibtex_show = {true},
+  pdf         = {ndss19_1.pdf},
+  code        = {https://github.com/AhmedSalem2/ML-Leaks},
+  abstract    = {Machine learning (ML) has become a core component of many real-world applications and training data is a key factor that drives current progress. This huge success has led Internet companies to deploy machine learning as a service (MLaaS). Recently, the first membership inference attack has shown that extraction of information on the training set is possible in such MLaaS settings, which has severe security and privacy implications.<br><br>However, the early demonstrations of the feasibility of such attacks have many assumptions on the adversary, such as using multiple so-called shadow models, knowledge of the target model structure, and having a dataset from the same distribution as the target model’s training data. We relax all these key assumptions, thereby showing that such attacks are very broadly applicable at low cost and thereby pose a more severe risk than previously thought. We present the most comprehensive study so far on this emerging and developing threat using eight diverse datasets which show the viability of the proposed attacks across domains. In addition, we propose the first effective defense mechanisms against such broader class of membership inference attacks that maintain a high level of utility of the ML model.}
 } 
 
 @inproceedings{mbeacon,
@@ -15,7 +18,9 @@
   booktitle   = {Proceedings of the 26th Annual Network and Distributed System Security Symposium (NDSS)},
   keywords    = {primary},
   abbr        = {NDSS},
-  bibtex_show = {true}
+  bibtex_show = {true},
+  pdf         = {ndss19_2.pdf},
+  abstract    = {The advancement of molecular profiling techniques fuels biomedical research with a deluge of data. To facilitate data sharing, the Global Alliance for Genomics and Health established the Beacon system, a search engine designed to help researchers find datasets of interest. While the current Beacon system only supports genomic data, other types of biomedical data, such as DNA methylation, are also essential for advancing our understanding in the field. In this paper, we propose the first Beacon system for DNA methylation data sharing: MBeacon. As the current genomic Beacon is vulnerable to privacy attacks, such as membership inference, and DNA methylation data is highly sensitive, we take a privacy-by-design approach to construct MBeacon.<br><br>First, we demonstrate the privacy threat, by proposing a membership inference attack tailored specifically to unprotected methylation Beacons. Our experimental results show that 100 queries are sufficient to achieve a successful attack with AUC (area under the ROC curve) above 0.9. To remedy this situation, we propose a novel differential privacy mechanism, namely SVT^2, which is the core component of MBeacon. Extensive experiments over multiple datasets show that SVT^2 can successfully mitigate membership privacy risks without significantly harming utility. We further implement a fully functional prototype of MBeacon which we make available to the research community.}
 } 
 
 @inproceedings{revisiting,
@@ -36,7 +41,9 @@
   publisher   = {USENIX Association},
   keywords    = {primary},
   abbr        = {USENIX},
-  bibtex_show = {true}
+  bibtex_show = {true},
+  pdf         = {usenix_security16.pdf},
+  abstract    = {The decreasing cost of molecular profiling tests, such as DNA sequencing, and the consequent increasing availability of biological data are revolutionizing medicine, but at the same time create novel privacy risks. The research community has already proposed a plethora of methods for protecting genomic data against these risks. However, the privacy risks stemming from epigenetics, which bridges the gap between the genome and our health characteristics, have been largely overlooked so far, even though epigenetic data such as microRNAs (miRNAs) are no less privacy sensitive. This lack of investigation is attributed to the common belief that the inherent temporal variability of miRNAs shields them from being tracked and linked over time.<br><br>In this paper, we show that, contrary to this belief, miRNA expression profiles can be successfully tracked over time, despite their variability. Specifically, we show that two blood-based miRNA expression profiles taken with a time difference of one week from the same person can be matched with a success rate of 90\%. We furthermore observe that this success rate stays almost constant when the time difference is increased from one week to one year. In order to mitigate the linkability threat, we propose and thoroughly evaluate two countermeasures: (i) hiding a subset of disease-irrelevant miRNA expressions, and (ii) probabilistically sanitizing the miRNA expression profiles. Our experiments show that the second mechanism provides a better trade-off between privacy and disease-prediction accuracy.}
 }
 
 @inproceedings{backes2016membership,
@@ -47,7 +54,9 @@
   publisher   = {ACM},
   keywords    = {primary},
   abbr        = {CCS},
-  bibtex_show = {true}
+  bibtex_show = {true},
+  pdf         = {ccs16.pdf},
+  abstract    = {The continuous decrease in cost of molecular profiling tests is revolutionizing medical research and practice, but it also raises new privacy concerns. One of the first attacks against privacy of biological data, proposed by Homer et al. in 2008, showed that, by knowing parts of the genome of a given individual and summary statistics of a genome-based study, it is possible to detect if this individual participated in the study. Since then, a lot of work has been carried out to further study the theoretical limits and to counter the genome-based membership inference attack. However, genomic data are by no means the only or the most influential biological data threatening personal privacy. For instance, whereas the genome informs us about the risk of developing some diseases in the future, epigenetic biomarkers, such as microRNAs, are directly and deterministically affected by our health condition including most common severe diseases.<br><br>In this paper, we show that the membership inference attack also threatens the privacy of individuals contributing their microRNA expressions to scientific studies. Our results on real and public microRNA expression data demonstrate that disease-specific datasets are especially prone to membership detection, offering a true-positive rate of up to 77\% at a false-negative rate of less than 1\%. We present two attacks: one relying on the L1 distance and the other based on the likelihood-ratio test. We show that the likelihood-ratio test provides the highest adversarial success and we derive a theoretical limit on this success. In order to mitigate the membership inference, we propose and evaluate both a differentially private mechanism and a hiding mechanism. We also consider two types of adversarial prior knowledge for the differentially private mechanism and show that, for relatively large datasets, this mechanism can protect the privacy of participants in miRNA-based studies against strong adversaries without degrading the data utility too much. Based on our findings and given the current number of miRNAs, we recommend to only release summary statistics of datasets containing at least a couple of hundred individuals.}
 }
 
 @inproceedings{backes2017meQTLs,
@@ -58,7 +67,10 @@
   publisher   = {IEEE},
   keywords    = {primary},
   abbr        = {S\&P},
-  bibtex_show = {true}
+  bibtex_show = {true},
+  pdf         = {oakland17.pdf},
+  code        = {https://github.com/paberr/ciphermed-forests},
+  abstract    = {Since the first whole-genome sequencing, the biomedical research community has made significant steps towards a more precise, predictive and personalized medicine. Genomic data is nowadays widely considered privacy-sensitive and consequently protected by strict regulations and released only after careful consideration. Various additional types of biomedical data, however, are not shielded by any dedicated legal means and consequently disseminated much less thoughtfully. This in particular holds true for DNA methylation data as one of the most important and well-understood epigenetic element influencing human health.<br><br>In this paper, we show that, in contrast to the aforementioned belief, releasing one's DNA methylation data causes privacy issues akin to releasing one's actual genome. We show that already a small subset of methylation regions influenced by genomic variants are sufficient to infer parts of someone's genome, and to further map this DNA methylation profile to the corresponding genome. Notably, we show that such re-identification is possible with 97.5\% accuracy, relying on a dataset of more than 2500 genomes, and that we can reject all wrongly matched genomes using an appropriate statistical test. We provide means for countering this threat by proposing a novel cryptographic scheme for privately classifying tumors that enables a privacy-respecting medical diagnosis in a common clinical setting. The scheme relies on a combination of random forests and homomorphic encryption, and it is proven secure in the honest-but-curious model. We evaluate this scheme on real DNA methylation data, and show that we can keep the computational overhead to acceptable values for our application scenario.}
 }
 
 @inproceedings{backes2017dissecting,
@@ -69,7 +81,9 @@
   year        = {2018},
   keywords    = {primary},
   abbr        = {EuroS\&P},
-  bibtex_show = {true}
+  bibtex_show = {true},
+  pdf         = {eurosp18.pdf},
+  abstract    = {The decreasing costs of molecular profiling has fueled the biomedical research community with a plethora of new types of biomedical data, enabling a breakthrough towards a more precise and personalized medicine. However, the release of these intrinsically highly sensitive data poses a new severe privacy threat. While biomedical data is largely associated with our health, there also exist various correlations between different types of biomedical data, along the temporal dimension, and also in-between family members. However, so far, the security community has focused on privacy risks stemming from genomic data, largely overlooking the manifold interdependencies between other biomedical data.<br><br>In this paper, we present a generic framework for quantifying the privacy risks in biomedical data taking into account the various interdependencies between data (i) of different types, (ii) from different individuals, and (iii) at different time. To this end, we rely on a Bayesian network model that allows us to take all aforementioned dependencies into account and run exact probabilistic inference attacks very efficiently. Furthermore, we introduce a generic algorithm for building the Bayesian network, which encompasses expert knowledge for known dependencies, such as genetic inheritance laws, and learns previously unknown dependencies from the data. Then, we conduct a thorough inference risk evaluation with a very rich dataset containing genomic and epigenomic data of mothers and children over multiple years. Besides effective probabilistic inference, we further demonstrate that our Bayesian network model can also serve as a building block for other attacks. We show that, with our framework, an adversary can efficiently identify the parent-child relationships based on methylation data with a success rate of 95\%.}
 }
 
 @inproceedings{backes2016epigenomic,
@@ -89,7 +103,9 @@
   year        = {2016},
   keywords    = {secondary},
   abbr        = {GenoPri},
-  bibtex_show = {true}
+  bibtex_show = {true},
+  pdf         = {genopri16.pdf},
+  abstract    = {The dramatically decreasing costs of DNA sequencing have triggered more than a million humans to date to have their genotypes sequenced. Moreover, these individuals increasingly make their genomic data publicly available, and thereby create unique privacy threats not only for themselves, but also for their relatives because of their DNA similarities. More generally, an entity that gains access to a significant fraction of sequenced genotypes from a given population might be able to infer even the genomes of unsequenced individuals by relying on available data.<br><br>In this paper, we propose a simulation-based model for quantifying the impact of continuously sequencing and publicizing personal genomic data on a population’s genomic privacy. Our simulation probabilistically models data sharing by individuals and additionally takes into account the influence on genomic privacy of geopolitical events such as migration, and sociological trends such as interracial marriage. We exemplarily instantiate our simulation with a sample population of 1,000 individuals, and evaluate the evolution of privacy under different settings over either thousands of genomic variants or a subset of variants influencing the phenotype. Our findings notably demonstrate that an increasing sharing rate of genomic data in the future entails a substantial negative effect on the privacy of all older generations. Moreover, we find that mixed populations, due to their large genomic diversity, face a less severe erosion of genomic privacy over time than more homogeneous populations. However, even when no data is shared, the genomic privacy averaged over a large number of variants is already very low since mere population allele frequencies already reveal a lot of information about the values of the genomic variants. By focusing on a subset of sensitive variants, we observe a higher genetic diversity in the population. Thus, genomic-data sharing can be much more detrimental for the privacy of the most sensitive variants.}
 }
 
 @incollection{backes2016zoos,
@@ -166,7 +182,9 @@
   year        = {2019},
   keywords    = {primary},
   abbr        = {PoPETs},
-  bibtex_show = {true}
+  bibtex_show = {true},
+  pdf         = {popets19.pdf},
+  abstract    = {The decreasing costs of molecular profiling have fueled the biomedical research community with a plethora of new types of biomedical data, enabling a breakthrough towards more precise and personalized medicine. Naturally, the increasing availability of data also enables physicians to compare patients’ data and treatments easily and to find similar patients in order to propose the optimal therapy. Such similar patient queries (SPQs) are of utmost importance to medical practice and will be relied upon in future health information exchange systems. While privacy-preserving solutions have been previously studied, those are limited to genomic data, ignoring the different newly available types of biomedical data.<br><br>In this paper, we propose new cryptographic techniques for finding similar patients in a privacy-preserving manner with various types of biomedical data, including genomic, epigenomic and transcriptomic data as well as their combination. We design protocols for two of the most common similarity metrics in biomedicine: the Euclidean distance and Pearson correlation coefficient. Moreover, unlike previous approaches, we account for the fact that certain locations contribute differently to a given disease or phenotype by allowing to limit the query to the relevant locations and to assign them different weights. Our protocols are specifically designed to be highly efficient in terms of communication and bandwidth, requiring only one or two rounds of communication and thus enabling scalable parallel queries. We rigorously prove our protocols to be secure based on cryptographic games and instantiate our technique with three of the most important types of biomedical data – namely DNA, microRNA expression, and DNA methylation. Our experimental results show that our protocols can compute a similarity query over a typical number of positions against a database of 1,000 patients in a few seconds. Finally, we propose and formalize strategies to mitigate the threat of malicious users or hospitals.}
 }
 
 @inproceedings{hagestedt2020membership,
@@ -177,5 +195,7 @@
   organization = {IEEE},
   keywords     = {primary},
   abbr         = {EuroS\&P},
-  bibtex_show  = {true}
+  bibtex_show  = {true},
+  pdf          = {eurosp20.pdf},
+  abstract     = {Biomedical data sharing is one of the key elements fostering the advancement of biomedical research but poses severe risks towards the privacy of individuals contributing their data, as already demonstrated for genomic data. In this paper, we study whether and to which extent DNA methylation data, one of the most important epigenetic elements regulating human health, is prone to membership inference attacks, a critical type of attack that reveals an individual's participation in a given database. We design and evaluate three different attacks exploiting published summary statistics, among which one is based on machine learning and another is exploiting the dependencies between genome and methylation data. Our extensive evaluation on six datasets containing a diverse set of tissues and diseases collected from more than 1,300 individuals in total shows that such membership inference attacks are effective, even when the target's methylation profile is not accessible. It further shows that the machine-learning approach outperforms the statistical attacks, and that learned models are transferable across different datasets.}
 }
