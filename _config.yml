@@ -223,6 +223,9 @@ scholar:
   details_layout: bibtex.html
   details_link: Details
 
+  sort_by: year
+  order: descending
+
   query: "@*"
 
 
