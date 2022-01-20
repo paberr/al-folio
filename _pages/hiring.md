@@ -1,7 +1,7 @@
 ---
 layout: page
 title: hiring
-permalink: /hiring
+permalink: /hiring/
 
 nav: true
 ---
