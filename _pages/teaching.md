@@ -6,14 +6,28 @@ description: Taught courses.
 nav: true
 ---
 
-#### Network Security & Cryptography (2021, Sem 1)
-Lecturer
+<!-- pages/teaching.md -->
+<!-- Display teaching -->
+<div class="teaching">
 
-#### Security & Networks (2021, Sem 2)
-Lecturer
+{%- assign sorted_teaching = site.teaching | group_by_exp: "post", "post.year"  | sort: "year" | reverse -%}
+{%- for courses in sorted_teaching -%}
+    <h2 class="year">{{courses.name}}</h2>
+    <ol class="courses">
+    {%- for course in courses.items -%}
+    <li>
+        <div class="row">
+            <div class="col-sm-2 abbr"><abbr class="badge">{{course.type}}</abbr></div>
 
-#### Theory of Modern Privacy Research (Winter 2016)
-Lecturer/Advisor
+            <div class="col-sm-8">
+                <div class="title">{% if course.details %}<a href="{{ course.url | relative_url }}">{% endif %}{{course.title}}{% if course.semester %} ({{course.semester}}){% endif %}{% if course.details %}</a>{% endif %}</div>
+            
+                <div class="role">{{course.role}}</div>
+            </div>
+        </div>
+    </li>
+    {%- endfor -%}
+    </ol>
+{% endfor %}
 
-#### Foundations of Cybersecurity (Winter 2015)
-Teaching Assistant
+</div>
