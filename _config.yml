@@ -183,6 +183,11 @@ collections:
   projects:
     output: false
     permalink: /projects/:path/
+  teaching:
+    defaults:
+      layout: page
+    output: true
+    permalink: /teaching/:path/
 
 announcements:
   enabled: true
