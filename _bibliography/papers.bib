@@ -201,33 +201,59 @@
   abstract     = {Biomedical data sharing is one of the key elements fostering the advancement of biomedical research but poses severe risks towards the privacy of individuals contributing their data, as already demonstrated for genomic data. In this paper, we study whether and to which extent DNA methylation data, one of the most important epigenetic elements regulating human health, is prone to membership inference attacks, a critical type of attack that reveals an individual's participation in a given database. We design and evaluate three different attacks exploiting published summary statistics, among which one is based on machine learning and another is exploiting the dependencies between genome and methylation data. Our extensive evaluation on six datasets containing a diverse set of tissues and diseases collected from more than 1,300 individuals in total shows that such membership inference attacks are effective, even when the target's methylation profile is not accessible. It further shows that the machine-learning approach outperforms the statistical attacks, and that learned models are transferable across different datasets.}
 }
 
-@article{esiyok2022accountable,
+@inproceedings{esiyok2023accountable,
   title       = {Accountable Javascript Code Delivery},
-  author      = {Esiyok, Ilkan and Kuennemann, Robert and Berrang, Pascal and Cohn-Gordon, Katriel},
-  journal     = {arXiv preprint arXiv:2202.09795},
-  year        = {2022},
-  abbr        = {arXiv},
+  author      = {Esiyok, Ilkan and Berrang, Pascal and Cohn-Gordon, Katriel and Kuennemann, Robert},
+  year        = {2023},
+  booktitle   = {Proceedings of the 30th Annual Network and Distributed System Security Symposium (NDSS)},
+  keywords    = {primary},
+  abbr        = {NDSS},
   bibtex_show = {true},
   arxiv       = {2202.09795},
-  abstract    = {The Internet is a major distribution platform for applications, but there are no effective transparency and audit mechanisms. Due to the ephemeral nature of web applications, a client visiting a website has no guarantee that the code it receives today is the same as yesterday, or the same as others receive. Despite advances in web security, it is thus challenging to audit web applications before they are rendered in the browser. We propose Accountable JS, a browser extension and opt-in protocol for accountable delivery of active content on a web page. We prototype our protocol, formally model its security properties with the Tamarin Prover, and evaluate its compatibility and performance impact with case studies including WhatsApp Web, AdSense and Nimiq.}
+  abstract    = {The internet is a major distribution platform for web applications, but there are no effective transparency and audit mechanisms in place for the web. Due to the ephemeral nature of web applications, a client visiting a website has no guarantee that the code it receives today is the same as yesterday, or the same as other visitors receive. Despite advances in web security, it is thus challenging to audit web applications before they are rendered in the browser. We propose Accountable JS, a browser extension and opt in protocol for accountable delivery of active content on a web page. We prototype our protocol, formally model its security properties with the Tamarin Prover, and evaluate its compatibility and performance impact with case studies including WhatsApp Web, AdSense and Nimiq. Accountability is beginning to be deployed at scale, with Meta's recent announcement of Code Verify available to all 2 billion WhatsApp users, but there has been little formal analysis of such protocols. We formally model Code Verify using the Tamarin Prover and compare its properties to our Accountable JS protocol. We also compare Code Verify's and Accountable JS extension's performance impacts on WhatsApp Web.}
 }
 
-@article{wang2022zero,
+@inproceedings{wang2023zero,
   title       = {On How Zero-Knowledge Proof Blockchain Mixers Improve, and Worsen User Privacy},
   author      = {Wang, Zhipeng and Chaliasos, Stefanos and Qin, Kaihua and Zhou, Liyi and Gao, Lifeng and Berrang, Pascal and Livshits, Ben and Gervais, Arthur},
-  journal     = {arXiv preprint arXiv:2201.09035},
-  year        = {2022},
-  abbr        = {arXiv},
+  booktitle   = {Proceedings of the ACM Web Conference 2023},
+  year        = {2023},
+  keywords    = {primary},
+  abbr        = {WWW},
   bibtex_show = {true},
   arxiv       = {2201.09035},
-  abstract    = {One of the most prominent and widely-used blockchain privacy solutions are zero-knowledge proof (ZKP) mixers operating on top of smart contract-enabled blockchains. ZKP mixers typically advertise their level of privacy through a so-called anonymity set size, similar to k-anonymity, where a user hides among a set of k other users.<br><br>In reality, however, these anonymity set claims are mostly inaccurate, as we find through empirical measurements of the currently most active ZKP mixers. We propose five heuristics that, in combination, can increase the probability that an adversary links a withdrawer to the correct depositor on average by 51.94% (108.63%) on the most popular Ethereum (ETH) and Binance Smart Chain (BSC) mixer, respectively. Our empirical evidence is hence also the first to suggest a differing privacy-predilection of users on ETH and BSC. We further identify 105 Decentralized Finance (DeFi) attackers leveraging ZKP mixers as the initial funds and to deposit attack revenue (e.g., from phishing scams, hacking centralized exchanges, and blockchain project attacks).<br><br>State-of-the-art mixers are moreover tightly intertwined with the growing DeFi ecosystem by offering ``anonymity mining'' (AM) incentives, i.e., mixer users receive monetary rewards for mixing coins. However, contrary to the claims of related work, we find that AM does not always contribute to improving the quality of an anonymity set size of a mixer, because AM tends to attract privacy-ignorant users naively reusing addresses.}
+  abstract    = {One of the most prominent and widely-used blockchain privacy solutions are zero-knowledge proof (ZKP) mixers operating on top of smart contract-enabled blockchains. ZKP mixers typically advertise their level of privacy through a so-called anonymity set size, similar to k-anonymity, where a user hides among a set of k other users. In reality, however, these anonymity set claims are mostly inaccurate, as we find through empirical measurements of the currently most active ZKP mixers. We propose five heuristics that, in combination, can increase the probability that an adversary links a withdrawer to the correct depositor on average by 51.94% (108.63%) on the most popular Ethereum (ETH) and Binance Smart Chain (BSC) mixer, respectively. Our empirical evidence is hence also the first to suggest a differing privacy-predilection of users on ETH and BSC. We further identify 105 Decentralized Finance (DeFi) attackers leveraging ZKP mixers as the initial funds and to deposit attack revenue (e.g., from phishing scams, hacking centralized exchanges, and blockchain project attacks).<br><br>State-of-the-art mixers are moreover tightly intertwined with the growing DeFi ecosystem by offering "anonymity mining" (AM) incentives, i.e., mixer users receive monetary rewards for mixing coins. However, contrary to the claims of related work, we find that AM does not always contribute to improving the quality of an anonymity set size of a mixer, because AM tends to attract privacy-ignorant users naively reusing addresses.}
 }
 
 @inproceedings{backes2022ssle,
-  author          = {Backes, Michael and Berrang, Pascal and Hanzlik, Lucjan and Pryvalov, Ivan},
-  booktitle       = {27th European Symposium on Research in Computer Security (ESORICS) 2022},
-  title           = {A framework for constructing Single Secret Leader Election from MPC},
-  year            = {2022},
-  abbr            = {ESORICS},
-  bibtex_show     = {true},
+  author      = {Backes, Michael and Berrang, Pascal and Hanzlik, Lucjan and Pryvalov, Ivan},
+  booktitle   = {27th European Symposium on Research in Computer Security (ESORICS) 2022},
+  title       = {A framework for constructing Single Secret Leader Election from MPC},
+  year        = {2022},
+  abbr        = {ESORICS},
+  pdf         = {esorics22.pdf},
+  bibtex_show = {true},
+  abstract    = {The emergence of distributed digital currencies has raised the need for a reliable consensus mechanism. In proof-of-stake cryptocurrencies, the participants periodically choose a closed set of validators, who can vote and append transactions to the blockchain. Each validator can become a leader with the probability proportional to its stake. Keeping the leader private yet unique until it publishes a new block can significantly reduce the attack vector of an adversary and improve the throughput of the network. The problem of Single Secret Leader Election (SSLE) was first formally defined by Boneh et al. in 2020.<br><br>In this work, we propose a novel framework for constructing  SSLE protocols, which relies on secure multi-party computation (MPC) and satisfies the desired security properties. Our framework does not use any shuffle or sort operations and has a computational cost for $$N$$ parties as low as $$O(N)$$ of basic MPC operations per party. We improve the state-of-the-art for SSLE protocols that do not assume a trusted setup. Moreover, our SSLE scheme efficiently handles weighted elections. That is, for a total weight $$S$$ of $$N$$ parties, the associated costs are only increased  by a factor of $$\log{S}$$. When the MPC layer is instantiated with techniques based on Shamir's secret-sharing, our SSLE  has a communication cost of $$O(N^2)$$ which is spread over $$O(\log{N})$$ rounds, can tolerate up to $$t<N/2$$ of faulty nodes without restarting the protocol, and its security relies on DDH in the random oracle model. When the MPC layer is instantiated with more efficient techniques based on garbled circuits, our SSLE requires all parties to participate, up to $$N-1$$ of which can be malicious, and its security is based on the random oracle model.}
+}
+
+@article{sha2022finetuning,
+  author      = {Sha, Zeyang and He, Xinlei and Berrang, Pascal and Humbert, Mathias and Zhang, Yang},
+  journal     = {arXiv preprint arXiv:2212.09067},
+  title       = {Fine-Tuning Is All You Need to Mitigate Backdoor Attacks},
+  year        = {2022},
+  abbr        = {arXiv},
+  bibtex_show = {true},
+  arxiv       = {2212.09067},
+  abstract    = {Backdoor attacks represent one of the major threats to machine learning models. Various efforts have been made to mitigate backdoors. However, existing defenses have become increasingly complex and often require high computational resources or may also jeopardize models' utility. In this work, we show that fine-tuning, one of the most common and easy-to-adopt machine learning training operations, can effectively remove backdoors from machine learning models while maintaining high model utility. Extensive experiments over three machine learning paradigms show that fine-tuning and our newly proposed super-fine-tuning achieve strong defense performance. Furthermore, we coin a new term, namely backdoor sequela, to measure the changes in model vulnerabilities to other attacks before and after the backdoor has been removed. Empirical evaluation shows that, compared to other defense methods, super-fine-tuning leaves limited backdoor sequela. We hope our results can help machine learning model owners better protect their models from backdoor threats. Also, it calls for the design of more advanced attacks in order to comprehensively assess machine learning models' backdoor vulnerabilities.}
+}
+
+@article{yang2022data,
+  author      = {Yang, Ziqing and He, Xinlei and Li, Zheng and Backes, Michael and Humbert, Mathias and Berrang, Pascal and Zhang, Yang},
+  journal     = {arXiv preprint arXiv:2209.15266},
+  title       = {Data Poisoning Attacks Against Multimodal Encoders},
+  year        = {2022},
+  abbr        = {arXiv},
+  bibtex_show = {true},
+  arxiv       = {2209.15266},
+  abstract    = {Traditional machine learning (ML) models usually rely on large-scale labeled datasets to achieve strong performance. However, such labeled datasets are often challenging and expensive to obtain. Also, the predefined categories limit the model's ability to generalize to other visual concepts as additional labeled data is required. On the contrary, the newly emerged multimodal model, which contains both visual and linguistic modalities, learns the concept of images from the raw text. It is a promising way to solve the above problems as it can use easy-to-collect image-text pairs to construct the training dataset and the raw texts contain almost unlimited categories according to their semantics. However, learning from a large-scale unlabeled dataset also exposes the model to the risk of potential poisoning attacks, whereby the adversary aims to perturb the model's training dataset to trigger malicious behaviors in it. Previous work mainly focuses on the visual modality. In this paper, we instead focus on answering two questions: (1) Is the linguistic modality also vulnerable to poisoning attacks? and (2) Which modality is most vulnerable? To answer the two questions, we conduct three types of poisoning attacks against CLIP, the most representative multimodal contrastive learning framework. Extensive evaluations on different datasets and model architectures show that all three attacks can perform well on the linguistic modality with only a relatively low poisoning rate and limited epochs. Also, we observe that the poisoning effect differs between different modalities, i.e., with lower MinRank in the visual modality and with higher Hit@K when K is small in the linguistic modality. To mitigate the attacks, we propose both pre-training and post-training defenses. We empirically show that both defenses can significantly reduce the attack performance while preserving the model's utility.}
 }
