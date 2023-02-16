@@ -1,6 +1,6 @@
 ---
 title:  Security & Networks
-year: 2022
+year: 2023
 semester: Spring
 type: Lecture
 role: Lecturer
