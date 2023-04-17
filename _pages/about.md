@@ -14,7 +14,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a Lecturer (Assistant Professor) in Computer Science – Computer Security at the [University of Birmingham, UK](https://www.birmingham.ac.uk).
+I am an Assistant Professor in Computer Science – Computer Security at the [University of Birmingham, UK](https://www.birmingham.ac.uk).
 
 My research interests are in the field of IT Security & Privacy with a focus on Health Data, Blockchain Technology, and Artificial Intelligence & Machine Learning.
 
