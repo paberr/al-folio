@@ -247,16 +247,6 @@
   abstract    = {Backdoor attacks represent one of the major threats to machine learning models. Various efforts have been made to mitigate backdoors. However, existing defenses have become increasingly complex and often require high computational resources or may also jeopardize models' utility. In this work, we show that fine-tuning, one of the most common and easy-to-adopt machine learning training operations, can effectively remove backdoors from machine learning models while maintaining high model utility. Extensive experiments over three machine learning paradigms show that fine-tuning and our newly proposed super-fine-tuning achieve strong defense performance. Furthermore, we coin a new term, namely backdoor sequela, to measure the changes in model vulnerabilities to other attacks before and after the backdoor has been removed. Empirical evaluation shows that, compared to other defense methods, super-fine-tuning leaves limited backdoor sequela. We hope our results can help machine learning model owners better protect their models from backdoor threats. Also, it calls for the design of more advanced attacks in order to comprehensively assess machine learning models' backdoor vulnerabilities.}
 }
 
-@article{yang2022data,
-  author      = {Yang, Ziqing and He, Xinlei and Li, Zheng and Backes, Michael and Humbert, Mathias and Berrang, Pascal and Zhang, Yang},
-  journal     = {arXiv preprint arXiv:2209.15266},
-  title       = {Data Poisoning Attacks Against Multimodal Encoders},
-  year        = {2022},
-  abbr        = {arXiv},
-  bibtex_show = {true},
-  arxiv       = {2209.15266}
-}
-
 @inproceedings{yang2023data,
   author      = {Yang, Ziqing and He, Xinlei and Li, Zheng and Backes, Michael and Humbert, Mathias and Berrang, Pascal and Zhang, Yang},
   booktitle   = {40th International Conference on Machine Learning (ICML)},
@@ -266,4 +256,18 @@
   arxiv       = {2209.15266},
   bibtex_show = {true},
   abstract    = {Traditional machine learning (ML) models usually rely on large-scale labeled datasets to achieve strong performance. However, such labeled datasets are often challenging and expensive to obtain. Also, the predefined categories limit the model's ability to generalize to other visual concepts as additional labeled data is required. On the contrary, the newly emerged multimodal model, which contains both visual and linguistic modalities, learns the concept of images from the raw text. It is a promising way to solve the above problems as it can use easy-to-collect image-text pairs to construct the training dataset and the raw texts contain almost unlimited categories according to their semantics. However, learning from a large-scale unlabeled dataset also exposes the model to the risk of potential poisoning attacks, whereby the adversary aims to perturb the model's training dataset to trigger malicious behaviors in it. Previous work mainly focuses on the visual modality. In this paper, we instead focus on answering two questions: (1) Is the linguistic modality also vulnerable to poisoning attacks? and (2) Which modality is most vulnerable? To answer the two questions, we conduct three types of poisoning attacks against CLIP, the most representative multimodal contrastive learning framework. Extensive evaluations on different datasets and model architectures show that all three attacks can perform well on the linguistic modality with only a relatively low poisoning rate and limited epochs. Also, we observe that the poisoning effect differs between different modalities, i.e., with lower MinRank in the visual modality and with higher Hit@K when K is small in the linguistic modality. To mitigate the attacks, we propose both pre-training and post-training defenses. We empirically show that both defenses can significantly reduce the attack performance while preserving the model's utility.}
+}
+
+@inproceedings{wu2024quantifying,
+  title       = {Quantifying Privacy Risks of Prompts in Visual Prompt Learning},
+  author      = {Wu, Yixin and Wne, Rui and Backes, Michael and Berrang, Pascal and Humbert, Mathias and Shen, Yun and Zhang, Yang},
+  booktitle   = {Proceedings of the 33rd USENIX Security Symposium (Security)},
+  year        = {2024},
+  publisher   = {USENIX Association},
+  keywords    = {primary},
+  abbr        = {USENIX},
+  bibtex_show = {true},
+  pdf         = {usenix_security24.pdf},
+  arxiv       = {2310.11970},
+  abstract    = {Large-scale pre-trained models are increasingly adapted to downstream tasks through a new paradigm called prompt learning. In contrast to fine-tuning, prompt learning does not update the pre-trained model's parameters. Instead, it only learns an input perturbation, namely prompt, to be added to the downstream task data for predictions. Given the fast development of prompt learning, a well-generalized prompt inevitably becomes a valuable asset as significant effort and proprietary data are used to create it. This naturally raises the question of whether a prompt may leak the proprietary information of its training data. In this paper, we perform the first comprehensive privacy assessment of prompts learned by visual prompt learning through the lens of property inference and membership inference attacks. Our empirical evaluation shows that the prompts are vulnerable to both attacks. We also demonstrate that the adversary can mount a successful property inference attack with limited cost. Moreover, we show that membership inference attacks against prompts can be successful with relaxed adversarial assumptions. We further make some initial investigations on the defenses and observe that our method can mitigate the membership inference attacks with a decent utility-defense trade-off but fails to defend against property inference attacks. We hope our results can shed light on the privacy risks of the popular prompt learning paradigm. To facilitate the research in this direction, we will share our code and models with the community.}
 }
