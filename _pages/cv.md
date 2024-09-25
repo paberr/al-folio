@@ -18,10 +18,11 @@ Education
 
 Work experience
 ======
-* Oct 2020–present: Lecturer in Computer Science, [University of Birmingham](https://birmingham.ac.uk)
+* Oct 2024–present: Associate Professor in Computer Science, [University of Birmingham](https://birmingham.ac.uk)
+* Oct 2020–Oct 2024: Lecturer/Assistant Professor in Computer Science, [University of Birmingham](https://birmingham.ac.uk)
 * Jun 2017–present: Freelance Researcher & Consultant
 * Jun 2014–Mar 2018: Research Assistant, [CISPA](https://cispa.saarland)
-  
+
 Awards / Honors
 ======
 * 2019: **Dr. Eduard Martin-Award** for the best Ph.D. thesis in the category of mathematics and computer science, *Saarland University*.
